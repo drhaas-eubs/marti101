@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found · MARTI101</title>
+<style>body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#1D2660;color:#fff;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
+.box{padding:40px}h1{font-size:64px;margin:0}p{opacity:.85}a{color:#FFD23F;font-weight:bold;text-decoration:none}a:hover{text-decoration:underline}
+.rule{height:3px;width:70px;background:#00B388;border:none;margin:18px auto}</style></head>
+<body><div class="box"><h1>404</h1><hr class="rule"><p>That page isn't here.</p>
+<p><a href="./">Return to the MARTI101 home page</a> &middot; <a href="slibrary.html">Framework Authors</a></p>
+<p style="font-size:12px;opacity:.6;margin-top:24px">© 2026 Dr. Hildegard Haas · EU Business School</p></div><style id="marti-protect-css">
+  *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input,textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+  @media print{html,body{display:none !important}}
+</style>
+<script id="marti-protect-js">
+(function(){
+  // block context menu (right-click)
+  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
+  // block copy / cut
+  ['copy','cut'].forEach(function(ev){document.addEventListener(ev,function(e){e.preventDefault();},{capture:true});});
+  // block drag of text/images
+  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
+  // block common keyboard shortcuts: Ctrl/Cmd + C, X, S, P, U, A  and F12 / devtools
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase();
+    var meta=e.ctrlKey||e.metaKey;
+    if(meta && ['c','x','s','p','u','a'].indexOf(k)!==-1){e.preventDefault();return false;}
+    if(k==='f12'){e.preventDefault();return false;}
+    if(meta && e.shiftKey && ['i','j','c'].indexOf(k)!==-1){e.preventDefault();return false;} // devtools
+    if(e.key==='PrintScreen'){e.preventDefault();return false;}
+  },{capture:true});
+  // block print()
+  window.addEventListener('beforeprint',function(e){/* CSS hides body */});
+})();
+</script>
+
+</body></html>
