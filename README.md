@@ -11,6 +11,7 @@ EU Business School.
 | File | Purpose |
 |------|---------|
 | `index.html` | Course landing page — six units, links to the author gallery |
+| `gallery.html` | Framework Gallery — 120 interactive thumbnails, quick-look modals, drill to full sheet |
 | `frameworks.html` | Framework Sheet Library — 145-page print-styled reference — master index, 24 Slibrary indexes, 120 nine-section A4 sheets |
 | `slibrary.html` | Framework Author Slibrary — 111 authors, 120 frameworks, 6 units, 24 Slibraries; searchable, with click-to-expand six-section profiles |
 | `404.html` | Not-found fallback page |
