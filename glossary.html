@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MARTI101 &middot; Glossary Reference Library</title>
-<meta name="description" content="MARTI101 glossary: 48 professional definitions across six units, Harvard-referenced, with a print-ready reference sheet for every term.">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARTI101 &middot; Glossary &amp; Key Terms</title>
+<meta name="description" content="MARTI101 glossary: 48 key terms across six units, each with its professional definition and Harvard-referenced source.">
+<script>document.documentElement.className+=' protected';</script>
 <style>
-  :root{--navy:#1D2660;--teal:#00B388;--yellow:#FFD23F;--ink:#1D3A5C;--gray:#F4F6F9;--line:#E3E8F0;--muted:#5A6072}
+  :root{--navy:#1D2660;--teal:#00B388;--yellow:#FFD23F;--ink:#1D3A5C;--gray:#F4F6F9;--line:#E3E8F0;--muted:#5A6072;--shadow:0 2px 8px rgba(29,38,96,.08)}
   *{box-sizing:border-box}html{scroll-behavior:smooth}
   body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;background:#FAFBFC;line-height:1.55}
   .backbar{background:#eef4f0;padding:12px 22px}
@@ -11,714 +15,104 @@
   .backbar a:hover{text-decoration:underline}
   header.hero{background:var(--navy);color:#fff;padding:46px 24px 36px;text-align:center}
   header.hero .kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--yellow);margin:0 0 12px;font-weight:bold}
-  header.hero h1{margin:0 0 8px;font-size:clamp(26px,4.4vw,40px)}
-  header.hero .tag{margin:0;font-size:15px;opacity:.9}
+  header.hero h1{margin:0 0 10px;font-size:clamp(26px,4.4vw,40px)}
+  header.hero .tag{margin:0 auto;font-size:15px;opacity:.9;max-width:720px}
   header.hero .copyright{margin:12px 0 0;font-size:13px;opacity:.65;font-style:italic}
   .stats{max-width:900px;margin:26px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:38px}
   .stat{text-align:center}
   .stat .num{font-size:30px;font-weight:bold;color:var(--teal);line-height:1}
   .stat .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.75;margin-top:6px}
   .hero-accent{height:4px;background:var(--teal)}
-  main{max-width:1000px;margin:0 auto;padding:32px 20px 24px}
-  .search-wrap input{width:100%;font-family:inherit;font-size:15px;padding:14px 16px;border:1px solid #DADEE6;border-radius:10px;background:#fff;box-shadow:0 2px 8px rgba(29,38,96,.08)}
-  .search-wrap input:focus{outline:none;border-color:var(--teal)}
-  .tools{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 6px}
-  .tools button{font-family:inherit;font-size:12.5px;font-weight:bold;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:7px;padding:8px 14px;cursor:pointer}
-  .tools button.on,.tools button:hover{border-color:var(--teal);background:var(--gray)}
-  .dl{display:block;background:var(--navy);color:#fff;text-decoration:none;border-radius:10px;padding:20px 22px;font-weight:bold;font-size:15px;margin:22px 0 6px;box-shadow:0 2px 8px rgba(29,38,96,.08)}
-  .dl:hover{background:#243075}
-  .dl .sub{display:block;font-weight:normal;font-size:12.5px;opacity:.82;margin-top:6px}
-  .dl .mark{color:var(--teal);margin-right:8px}
-  .usec{margin:34px 0 0}
-  .usec-head{border-left:5px solid;padding:2px 0 2px 14px;margin:0 0 16px}
-  .usec-kick{font-size:11px;font-weight:bold;letter-spacing:1.6px;text-transform:uppercase}
-  .usec-head h2{margin:5px 0 0;font-size:19px;color:var(--ink)}
-  .usec-core{margin:7px 0 0;font-size:13.5px;font-style:italic;color:var(--muted);max-width:760px}
-  .gcards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .gcard{background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 2px 8px rgba(29,38,96,.06);padding:16px 18px;display:flex;flex-direction:column}
-  .gc-head{display:flex;align-items:center;gap:10px}
-  .gc-num{flex:none;color:#fff;font-weight:bold;font-size:11px;border-radius:5px;padding:3px 8px;letter-spacing:.5px}
-  .gc-title{font-size:15.5px;font-weight:bold;color:var(--ink)}
-  .gc-strap{margin:8px 0 0;font-size:12.5px;font-style:italic;color:var(--muted)}
-  .gc-def{margin:9px 0 0;font-size:13px;flex:1}
-  .gc-foot{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
-  .gc-foot a{font-size:11.5px;font-weight:bold;text-decoration:none;border-radius:6px;padding:6px 11px;border:1px solid var(--line);color:var(--ink)}
-  .gc-pdf{background:#B4444E;color:#fff !important;border-color:#B4444E !important}
-  .gc-unit:hover{border-color:var(--teal);background:var(--gray)}
-  .alist{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:14px 0 0}
-  .arow{display:flex;justify-content:space-between;align-items:baseline;gap:8px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:9px 12px;text-decoration:none}
-  .arow:hover{border-color:var(--teal)}
-  .a-t{font-size:12.5px;font-weight:bold;color:var(--ink)}
-  .a-u{font-size:10.5px;color:var(--muted);white-space:nowrap}
-  #alphaView{display:none}
-  footer.site{background:var(--navy);color:#fff;padding:30px 24px;text-align:center;margin-top:44px}
+
+  main{max-width:1000px;margin:0 auto;padding:30px 20px 24px}
+  .gl-controls{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:16px;scroll-margin-top:12px}
+  .gl-search{width:100%;font-family:inherit;font-size:15px;padding:13px 15px;border:1px solid #DADEE6;border-radius:9px;background:#fff}
+  .gl-search:focus{outline:none;border-color:var(--teal)}
+  .gl-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .gl-chip{font-family:inherit;font-size:12.5px;font-weight:bold;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
+  .gl-chip:hover{border-color:var(--teal)}
+  .gl-chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+  .gl-note{font-size:13.5px;color:var(--muted);margin:14px 0 0}
+  .gl-note b{color:var(--ink)}
+  .gl-count{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:22px 0 4px}
+
+  .gl-group{margin:26px 0 0;scroll-margin-top:12px}
+  .gl-ghead{display:flex;gap:14px;align-items:flex-start;border-left:5px solid var(--uc);padding:2px 0 2px 14px;margin:0 0 16px}
+  .unit-dot{flex:none;width:38px;height:38px;border-radius:9px;background:var(--uc);color:#fff;font-weight:bold;font-size:17px;display:flex;align-items:center;justify-content:center}
+  .gl-kick{font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;color:var(--uc)}
+  .gl-ghead h2{margin:4px 0 0;font-size:19px;color:var(--ink);line-height:1.3}
+  .gl-ilo{margin:7px 0 0;font-size:13.5px;color:var(--muted);max-width:780px}
+  .gl-ilo b{color:var(--ink)}
+
+  .gl-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .gl-item{background:#fff;border:1px solid var(--line);border-top:4px solid var(--uc);border-radius:11px;box-shadow:0 2px 8px rgba(29,38,96,.06);padding:16px 18px;display:flex;flex-direction:column}
+  .gl-h{display:flex;align-items:center;gap:10px}
+  .gl-num{flex:none;background:var(--uc);color:#fff;font-weight:bold;font-size:11px;border-radius:5px;padding:3px 8px;letter-spacing:.5px}
+  .gl-term{margin:0;font-size:16px;color:var(--ink);line-height:1.3}
+  .gl-strap{margin:8px 0 0;font-size:13px;font-style:italic;color:var(--muted)}
+  .gl-def{margin:9px 0 0;font-size:13.5px;flex:1}
+  .gl-ref{background:var(--gray);border-left:3px solid #2E8B6F;border-radius:0 7px 7px 0;padding:10px 12px;margin-top:12px}
+  .gl-ref span{display:block;font-size:10.5px;font-weight:bold;letter-spacing:.6px;text-transform:uppercase;color:#2E8B6F;margin-bottom:4px}
+  .gl-ref p{margin:0;font-size:12.5px;line-height:1.5}
+  .gl-empty{background:#fff;border:1px dashed var(--line);border-radius:11px;padding:28px;text-align:center;color:var(--muted);margin-top:16px}
+  mark{background:#FFF1B8;color:inherit;padding:0 1px;border-radius:2px}
+
+  footer.site{background:var(--navy);color:#fff;text-align:center;padding:28px 24px;margin-top:44px}
+  footer.site .divider{height:2px;width:60px;background:var(--teal);border:none;margin:0 auto 14px}
   footer.site p{margin:4px 0;font-size:13.5px;opacity:.9}
-  footer.site .divider{height:2px;width:60px;background:var(--teal);margin:0 auto 14px;border:none}
-  .hidden{display:none !important}
-  @media(max-width:820px){.gcards{grid-template-columns:1fr}.alist{grid-template-columns:1fr 1fr}}
-  @media(max-width:560px){.alist{grid-template-columns:1fr}}
-</style></head><body>
+  footer.site a{color:#9fe3cb;font-weight:bold;text-decoration:none}
+  @media(max-width:700px){.gl-list{grid-template-columns:1fr}.stats{gap:26px}}
+
+  /* ---- content protection ---- */
+  html.protected,html.protected body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
+  html.protected input{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+  #printGuard{position:fixed;inset:0;background:var(--navy);color:#fff;z-index:99999;display:none;align-items:center;justify-content:center;text-align:center;padding:40px;font-size:18px;line-height:1.6}
+  #printGuard.on{display:flex}
+  @media print{
+    html.protected body>*:not(#printGuard){display:none !important}
+    #printGuard{display:flex !important;position:static;background:#fff;color:#1D2660;min-height:90vh}
+  }
+</style>
+</head>
+<body>
+<div id="printGuard"><div>Printing, copying and downloading are disabled for this material.<br><br>MARTI101 &middot; Dr. Hildegard Haas &middot; EU Business School<br>&copy; 2026 Dr. Hildegard Haas</div></div>
+<script src="protect.js"></script>
+
 <div class="backbar"><a href="index.html">&larr; Back to Course Overview</a></div>
 <header class="hero">
-  <p class="kicker">MARTI101 &middot; Glossary Reference Library</p>
-  <h1>48 Professional Definitions</h1>
-  <p class="tag">Six units &middot; Harvard-referenced &middot; one print-ready reference sheet per term</p>
+  <p class="kicker">MARTI101 &middot; Reference</p>
+  <h1>Glossary &amp; Key Terms</h1>
+  <p class="tag">The foundational vocabulary of the course &mdash; forty-eight leader-facing terms, eight per unit, each with its professional definition and source.</p>
   <p class="copyright">&copy; 2026 Dr. Hildegard Haas &middot; EU Business School</p>
   <div class="stats">
-    <div class="stat"><div class="num">6</div><div class="lbl">Unit Glossaries</div></div>
-    <div class="stat"><div class="num">48</div><div class="lbl">Definitions</div></div>
-    <div class="stat"><div class="num">48</div><div class="lbl">Reference Sheets</div></div>
-    <div class="stat"><div class="num">175+</div><div class="lbl">Sources</div></div>
+    <div class="stat"><div class="num">48</div><div class="lbl">Key Terms</div></div>
+    <div class="stat"><div class="num">6</div><div class="lbl">Units</div></div>
+    <div class="stat"><div class="num">Harvard</div><div class="lbl">Referencing</div></div>
   </div>
 </header>
 <div class="hero-accent"></div>
+
 <main>
-  <div class="search-wrap"><input id="gsearch" type="text" placeholder="Search all 48 definitions&hellip;" aria-label="Search the glossary"></div>
-  <div class="tools">
-    <button id="byUnit" class="on" type="button">By unit</button>
-    <button id="byAlpha" type="button">A&ndash;Z</button>
-    <button id="expandAll" type="button">Clear filter</button>
-  </div>
-  <a class="dl" href="MARTI101_Glossary_Library_COMPLETE.pdf" target="_blank" rel="noopener">
-    <span class="mark">&#9632;</span>Download the complete library &mdash; 52 pages, bookmarked
-    <span class="sub">Cover, master index, how-to-use guide and all 48 reference sheets in one A4 PDF</span></a>
-
-  <div id="unitView">
-  <section class="usec" id="unit1" data-unit="1">
-    <div class="usec-head" style="border-left-color:#4A5AA8">
-      <span class="usec-kick" style="color:#4A5AA8">Unit 1 &middot; Presentation</span>
-      <h2>Digital Transformation &amp;amp; Artificial Intelligence</h2>
-      <p class="usec-core">Digital transformation fails as a technology project and succeeds as a leadership decision about where value moves.</p>
-    </div>
-    <div class="gcards">
-    <div class="gcard gitem" data-k="digital transformation the use of technology to radically improve performance or reach of an enterprise digital transformation is the use of digital technology to radically improve the performance or reach of an enterprise, achieved by combining investment in technology (digital intensity) with the leadership capability required to drive change through the organisation (transformation-management intensity). it is distinguished from technology deployment by the requirement that operating model, customer experience and business processes are redesigned, not merely automated (westerman, bonnet and mcafee, 2014; vial, 2019). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.1</span>
-        <span class="gc-title">Digital Transformation</span></div>
-      <p class="gc-strap">The use of technology to radically improve performance or reach of an enterprise</p>
-      <p class="gc-def">Digital transformation is the use of digital technology to radically improve the performance or reach of an enterprise, achieved by combining investment in technology (digital intensity) with the leadership capability required to drive change through the organisation (transformation-management intensity). It is distinguished from technology deployment by the requirement that operating model, customer experience and business processes are redesigned, not merely automated (Westerman, Bonnet and McAfee, 2014; Vial, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_01_digital_transformation.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="artificial intelligence machine-based systems that infer, from input, how to generate outputs that influence environments an artificial intelligence system is a machine-based system that, for explicit or implicit objectives, infers from the input it receives how to generate outputs such as predictions, content, recommendations or decisions that can influence physical or virtual environments; different ai systems vary in their levels of autonomy and adaptiveness after deployment (oecd, 2024; regulation (eu) 2024/1689, article 3(1)). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.2</span>
-        <span class="gc-title">Artificial Intelligence</span></div>
-      <p class="gc-strap">Machine-based systems that infer, from input, how to generate outputs that influence environments</p>
-      <p class="gc-def">An artificial intelligence system is a machine-based system that, for explicit or implicit objectives, infers from the input it receives how to generate outputs such as predictions, content, recommendations or decisions that can influence physical or virtual environments; different AI systems vary in their levels of autonomy and adaptiveness after deployment (OECD, 2024; Regulation (EU) 2024/1689, Article 3(1)).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_02_artificial_intelligence.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="digital maturity the degree to which a firm has aligned technology, capability and governance to a digital operating model digital maturity is the extent to which an organisation has developed and aligned the technological assets, human capabilities, processes and governance mechanisms required to compete through digital means. it is expressed as a position on an ordered scale of stages rather than as a binary state, and it is measured across multiple dimensions simultaneously so that unevenness between them becomes visible (kane et al., 2017; chanias and hess, 2016). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.3</span>
-        <span class="gc-title">Digital Maturity</span></div>
-      <p class="gc-strap">The degree to which a firm has aligned technology, capability and governance to a digital operating model</p>
-      <p class="gc-def">Digital maturity is the extent to which an organisation has developed and aligned the technological assets, human capabilities, processes and governance mechanisms required to compete through digital means. It is expressed as a position on an ordered scale of stages rather than as a binary state, and it is measured across multiple dimensions simultaneously so that unevenness between them becomes visible (Kane et al., 2017; Chanias and Hess, 2016).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_03_digital_maturity.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="digitisation and digitalisation converting analogue to digital, versus changing how work is done with digital means digitisation is the technical conversion of analogue information into a digital format, leaving the underlying process unchanged. digitalisation is the use of digital technologies to change a business process, business model or the way value is created and captured. the terms are not synonymous and not interchangeable, and the distinction between them separates cost-reduction projects from transformation (gartner, 2019; verhoef et al., 2021). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.4</span>
-        <span class="gc-title">Digitisation and Digitalisation</span></div>
-      <p class="gc-strap">Converting analogue to digital, versus changing how work is done with digital means</p>
-      <p class="gc-def">Digitisation is the technical conversion of analogue information into a digital format, leaving the underlying process unchanged. Digitalisation is the use of digital technologies to change a business process, business model or the way value is created and captured. The terms are not synonymous and not interchangeable, and the distinction between them separates cost-reduction projects from transformation (Gartner, 2019; Verhoef et al., 2021).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_04_digitisation_and_digitalisation.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="business model innovation deliberate change to how a firm creates, delivers and captures value business model innovation is a deliberate and non-trivial change to one or more elements of the system by which a firm creates value for customers, delivers that value, and captures a share of it as revenue and margin. it is distinguished from product innovation because the object changed is the architecture of the business rather than the offering itself (osterwalder and pigneur, 2010; amit and zott, 2012). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.5</span>
-        <span class="gc-title">Business Model Innovation</span></div>
-      <p class="gc-strap">Deliberate change to how a firm creates, delivers and captures value</p>
-      <p class="gc-def">Business model innovation is a deliberate and non-trivial change to one or more elements of the system by which a firm creates value for customers, delivers that value, and captures a share of it as revenue and margin. It is distinguished from product innovation because the object changed is the architecture of the business rather than the offering itself (Osterwalder and Pigneur, 2010; Amit and Zott, 2012).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_05_business_model_innovation.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="disruptive innovation a process by which a low-end or new-market entrant displaces established competitors disruptive innovation is a process by which a product or service initially takes root in simple applications at the low end of a market, or creates a new market among non-consumers, and then moves upmarket over time until it displaces established competitors. the term describes the trajectory of an entrant relative to incumbent performance, not the novelty or impressiveness of the technology itself (christensen, 1997; christensen, raynor and mcdonald, 2015). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.6</span>
-        <span class="gc-title">Disruptive Innovation</span></div>
-      <p class="gc-strap">A process by which a low-end or new-market entrant displaces established competitors</p>
-      <p class="gc-def">Disruptive innovation is a process by which a product or service initially takes root in simple applications at the low end of a market, or creates a new market among non-consumers, and then moves upmarket over time until it displaces established competitors. The term describes the trajectory of an entrant relative to incumbent performance, not the novelty or impressiveness of the technology itself (Christensen, 1997; Christensen, Raynor and McDonald, 2015).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_06_disruptive_innovation.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="technology adoption lifecycle the sequence of adopter groups through which an innovation diffuses the technology adoption lifecycle is the sequence of distinct adopter categories - innovators, early adopters, early majority, late majority and laggards - through which an innovation diffuses over time, distributed approximately normally across a population. each category adopts for different reasons and responds to different evidence, so a message that persuades one will not persuade the next (rogers, 1962; moore, 1991). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.7</span>
-        <span class="gc-title">Technology Adoption Lifecycle</span></div>
-      <p class="gc-strap">The sequence of adopter groups through which an innovation diffuses</p>
-      <p class="gc-def">The technology adoption lifecycle is the sequence of distinct adopter categories - innovators, early adopters, early majority, late majority and laggards - through which an innovation diffuses over time, distributed approximately normally across a population. Each category adopts for different reasons and responds to different evidence, so a message that persuades one will not persuade the next (Rogers, 1962; Moore, 1991).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_07_technology_adoption_lifecycle.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="value migration the flow of economic value away from obsolete business designs toward designs that better serve priorities value migration is the movement of economic value away from business designs that no longer meet customer priorities and toward designs that do, observable as a sustained shift in market value relative to revenue across the competitors in an industry. the unit of analysis is the business design rather than the firm or the product, and migration can occur while the losing firm's revenue is still growing (slywotzky, 1996). digital transformation &amp; artificial intelligence">
-      <div class="gc-head"><span class="gc-num" style="background:#4A5AA8">1.8</span>
-        <span class="gc-title">Value Migration</span></div>
-      <p class="gc-strap">The flow of economic value away from obsolete business designs toward designs that better serve priorities</p>
-      <p class="gc-def">Value migration is the movement of economic value away from business designs that no longer meet customer priorities and toward designs that do, observable as a sustained shift in market value relative to revenue across the competitors in an industry. The unit of analysis is the business design rather than the firm or the product, and migration can occur while the losing firm's revenue is still growing (Slywotzky, 1996).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U1_Glossary_08_value_migration.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit1_glossary.html">Unit 1 glossary</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="usec" id="unit2" data-unit="2">
-    <div class="usec-head" style="border-left-color:#7A4FA3">
-      <span class="usec-kick" style="color:#7A4FA3">Unit 2 &middot; Role Play</span>
-      <h2>Business Leadership in the AI Era</h2>
-      <p class="usec-core">AI literacy is not knowing how models work; it is knowing which question to ask second.</p>
-    </div>
-    <div class="gcards">
-    <div class="gcard gitem" data-k="ai literacy the competence to use, interpret, evaluate and question ai systems in a working context ai literacy is the set of competencies that enables a person to use artificial intelligence systems knowledgeably, to interpret and evaluate their outputs, to communicate about them accurately, and to judge when a system should not be relied upon. since 2 february 2025 it carries a legal meaning in the european union: article 4 of the ai act requires providers and deployers to ensure a sufficient level of ai literacy among staff operating ai systems on their behalf (long and magerko, 2020; regulation (eu) 2024/1689, article 4). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.1</span>
-        <span class="gc-title">AI Literacy</span></div>
-      <p class="gc-strap">The competence to use, interpret, evaluate and question AI systems in a working context</p>
-      <p class="gc-def">AI literacy is the set of competencies that enables a person to use artificial intelligence systems knowledgeably, to interpret and evaluate their outputs, to communicate about them accurately, and to judge when a system should not be relied upon. Since 2 February 2025 it carries a legal meaning in the European Union: Article 4 of the AI Act requires providers and deployers to ensure a sufficient level of AI literacy among staff operating AI systems on their behalf (Long and Magerko, 2020; Regulation (EU) 2024/1689, Article 4).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_01_ai_literacy.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="psychological safety a shared belief that the team is safe for interpersonal risk-taking psychological safety is a shared belief held by members of a team that the team is safe for interpersonal risk-taking: that speaking up with a question, a concern, a mistake or a dissenting view will not lead to embarrassment, rejection or punishment. it is a property of the group climate rather than of individual personality, and it is distinct from trust, which concerns a dyad, and from cohesion, which can suppress dissent (edmondson, 1999). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.2</span>
-        <span class="gc-title">Psychological Safety</span></div>
-      <p class="gc-strap">A shared belief that the team is safe for interpersonal risk-taking</p>
-      <p class="gc-def">Psychological safety is a shared belief held by members of a team that the team is safe for interpersonal risk-taking: that speaking up with a question, a concern, a mistake or a dissenting view will not lead to embarrassment, rejection or punishment. It is a property of the group climate rather than of individual personality, and it is distinct from trust, which concerns a dyad, and from cohesion, which can suppress dissent (Edmondson, 1999).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_02_psychological_safety.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="upper echelons theory organisational outcomes are partly predicted by the characteristics of the top management team upper echelons theory holds that organisational outcomes - strategic choices and performance levels - are partially predicted by the observable and psychological characteristics of the dominant coalition of senior managers, because executives act on their personalised interpretations of the situations they face, and those interpretations are shaped by their experience, values and cognitive base (hambrick and mason, 1984; hambrick, 2007). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.3</span>
-        <span class="gc-title">Upper Echelons Theory</span></div>
-      <p class="gc-strap">Organisational outcomes are partly predicted by the characteristics of the top management team</p>
-      <p class="gc-def">Upper echelons theory holds that organisational outcomes - strategic choices and performance levels - are partially predicted by the observable and psychological characteristics of the dominant coalition of senior managers, because executives act on their personalised interpretations of the situations they face, and those interpretations are shaped by their experience, values and cognitive base (Hambrick and Mason, 1984; Hambrick, 2007).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_03_upper_echelons_theory.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="organisational culture the pattern of shared basic assumptions a group has learned and teaches to new members organisational culture is the pattern of shared basic assumptions that a group learned as it solved its problems of external adaptation and internal integration, which has worked well enough to be considered valid and is therefore taught to new members as the correct way to perceive, think and feel in relation to those problems. it operates on three levels: visible artefacts, espoused values, and the underlying assumptions that actually govern behaviour (schein, 1985). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.4</span>
-        <span class="gc-title">Organisational Culture</span></div>
-      <p class="gc-strap">The pattern of shared basic assumptions a group has learned and teaches to new members</p>
-      <p class="gc-def">Organisational culture is the pattern of shared basic assumptions that a group learned as it solved its problems of external adaptation and internal integration, which has worked well enough to be considered valid and is therefore taught to new members as the correct way to perceive, think and feel in relation to those problems. It operates on three levels: visible artefacts, espoused values, and the underlying assumptions that actually govern behaviour (Schein, 1985).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_04_organisational_culture.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="change leadership the work of establishing direction and mobilising people through a transition change leadership is the work of establishing direction, aligning people to it and motivating them through a transition, as distinct from change management, which is the work of planning, resourcing, sequencing and controlling that transition. leadership addresses the human transition that follows an organisational change; management addresses the change itself, and the two are complementary rather than interchangeable (kotter, 1996; bridges, 1991). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.5</span>
-        <span class="gc-title">Change Leadership</span></div>
-      <p class="gc-strap">The work of establishing direction and mobilising people through a transition</p>
-      <p class="gc-def">Change leadership is the work of establishing direction, aligning people to it and motivating them through a transition, as distinct from change management, which is the work of planning, resourcing, sequencing and controlling that transition. Leadership addresses the human transition that follows an organisational change; management addresses the change itself, and the two are complementary rather than interchangeable (Kotter, 1996; Bridges, 1991).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_05_change_leadership.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="human-in-the-loop a control design in which a human decision is required within the system's operating cycle human-in-the-loop is a control design in which a human being is positioned inside the operating cycle of an automated system so that the system cannot complete a defined action without human input, review or approval. it is distinguished from human-on-the-loop, where the human supervises and may intervene but the system proceeds by default, and from human-in-command, where humans retain authority over whether the system operates at all (amershi et al., 2014; hleg ai, 2019). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.6</span>
-        <span class="gc-title">Human-in-the-Loop</span></div>
-      <p class="gc-strap">A control design in which a human decision is required within the system's operating cycle</p>
-      <p class="gc-def">Human-in-the-loop is a control design in which a human being is positioned inside the operating cycle of an automated system so that the system cannot complete a defined action without human input, review or approval. It is distinguished from human-on-the-loop, where the human supervises and may intervene but the system proceeds by default, and from human-in-command, where humans retain authority over whether the system operates at all (Amershi et al., 2014; HLEG AI, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_06_human_in_the_loop.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="algorithm aversion the tendency to discard an algorithm after seeing it err, even when it outperforms the human algorithm aversion is the tendency of people to lose confidence in an algorithmic forecaster more quickly than in a human forecaster after seeing each make the same mistake, and consequently to prefer the human even when the algorithm is demonstrably more accurate. its counterpart, algorithm appreciation, is the tendency to over-rely on algorithmic advice in low-stakes or unfamiliar tasks; both are errors of calibration rather than of preference (dietvorst, simmons and massey, 2015; logg, minson and moore, 2019). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.7</span>
-        <span class="gc-title">Algorithm Aversion</span></div>
-      <p class="gc-strap">The tendency to discard an algorithm after seeing it err, even when it outperforms the human</p>
-      <p class="gc-def">Algorithm aversion is the tendency of people to lose confidence in an algorithmic forecaster more quickly than in a human forecaster after seeing each make the same mistake, and consequently to prefer the human even when the algorithm is demonstrably more accurate. Its counterpart, algorithm appreciation, is the tendency to over-rely on algorithmic advice in low-stakes or unfamiliar tasks; both are errors of calibration rather than of preference (Dietvorst, Simmons and Massey, 2015; Logg, Minson and Moore, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_07_algorithm_aversion.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="decision rights the formal allocation of who may decide, who must be consulted, and who is accountable decision rights are the formal allocation across roles of the authority to make a specified class of decision, the obligation to provide input to it, and the accountability for its consequences. allocating them requires answering four questions for each decision: what is being decided, who decides, how the decision is made, and when it is made. ambiguity in this allocation, rather than in the analysis, is the common cause of decisions that are made repeatedly and never implemented (rogers and blenko, 2006). business leadership in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#7A4FA3">2.8</span>
-        <span class="gc-title">Decision Rights</span></div>
-      <p class="gc-strap">The formal allocation of who may decide, who must be consulted, and who is accountable</p>
-      <p class="gc-def">Decision rights are the formal allocation across roles of the authority to make a specified class of decision, the obligation to provide input to it, and the accountability for its consequences. Allocating them requires answering four questions for each decision: what is being decided, who decides, how the decision is made, and when it is made. Ambiguity in this allocation, rather than in the analysis, is the common cause of decisions that are made repeatedly and never implemented (Rogers and Blenko, 2006).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U2_Glossary_08_decision_rights.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit2_glossary.html">Unit 2 glossary</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="usec" id="unit3" data-unit="3">
-    <div class="usec-head" style="border-left-color:#2C7A9E">
-      <span class="usec-kick" style="color:#2C7A9E">Unit 3 &middot; Case Study</span>
-      <h2>Business Strategies in the AI Era</h2>
-      <p class="usec-core">An AI strategy that does not say what the firm will stop doing is a budget with a vocabulary problem.</p>
-    </div>
-    <div class="gcards">
-    <div class="gcard gitem" data-k="ai strategy a coherent set of choices about where ai will be applied and what will not be done an ai strategy is a coherent set of integrated choices specifying where in the business artificial intelligence will be applied, what capability will be built or acquired to apply it, how the resulting advantage will be defended, and - definitionally - what the firm will therefore stop doing. a list of intended applications without the corresponding renunciations is a budget, not a strategy, because it makes no choice (rumelt, 2011; iansiti and lakhani, 2020). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.1</span>
-        <span class="gc-title">AI Strategy</span></div>
-      <p class="gc-strap">A coherent set of choices about where AI will be applied and what will not be done</p>
-      <p class="gc-def">An AI strategy is a coherent set of integrated choices specifying where in the business artificial intelligence will be applied, what capability will be built or acquired to apply it, how the resulting advantage will be defended, and - definitionally - what the firm will therefore stop doing. A list of intended applications without the corresponding renunciations is a budget, not a strategy, because it makes no choice (Rumelt, 2011; Iansiti and Lakhani, 2020).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_01_ai_strategy.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="data strategy the choices governing how data is sourced, governed and used to serve the business strategy a data strategy is the set of choices governing how an organisation sources, stores, governs, shares and exploits data in service of its business strategy. a central choice is the balance between defensive objectives - security, integrity, regulatory compliance - and offensive objectives - analytics, customer insight, competitive differentiation - since the architectures that optimise for one impede the other (dallemule and davenport, 2017). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.2</span>
-        <span class="gc-title">Data Strategy</span></div>
-      <p class="gc-strap">The choices governing how data is sourced, governed and used to serve the business strategy</p>
-      <p class="gc-def">A data strategy is the set of choices governing how an organisation sources, stores, governs, shares and exploits data in service of its business strategy. A central choice is the balance between defensive objectives - security, integrity, regulatory compliance - and offensive objectives - analytics, customer insight, competitive differentiation - since the architectures that optimise for one impede the other (DalleMule and Davenport, 2017).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_02_data_strategy.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="competitive advantage superior value creation that rivals cannot readily replicate or substitute a competitive advantage exists where a firm creates greater economic value than its rivals and the source of that value is not simultaneously being exploited by them. it is sustained where the underlying resource is valuable, rare, imperfectly imitable and organisationally exploitable - the vrio conditions - and it is competitive parity, not advantage, where a resource is valuable but widely available (barney, 1991; porter, 1985). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.3</span>
-        <span class="gc-title">Competitive Advantage</span></div>
-      <p class="gc-strap">Superior value creation that rivals cannot readily replicate or substitute</p>
-      <p class="gc-def">A competitive advantage exists where a firm creates greater economic value than its rivals and the source of that value is not simultaneously being exploited by them. It is sustained where the underlying resource is valuable, rare, imperfectly imitable and organisationally exploitable - the VRIO conditions - and it is competitive parity, not advantage, where a resource is valuable but widely available (Barney, 1991; Porter, 1985).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_03_competitive_advantage.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="ai operating model how ai capability, decision rights and delivery are organised across centre and business an ai operating model is the arrangement of people, decision rights, processes, platform and governance through which an organisation converts ai capability into operating results. its principal design choice is the distribution of capability between a central function and the business units - centralised, federated with a centre of excellence, or fully devolved - and each option trades delivery speed against consistency, reuse and control (fountaine, mccarthy and saleh, 2019). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.4</span>
-        <span class="gc-title">AI Operating Model</span></div>
-      <p class="gc-strap">How AI capability, decision rights and delivery are organised across centre and business</p>
-      <p class="gc-def">An AI operating model is the arrangement of people, decision rights, processes, platform and governance through which an organisation converts AI capability into operating results. Its principal design choice is the distribution of capability between a central function and the business units - centralised, federated with a centre of excellence, or fully devolved - and each option trades delivery speed against consistency, reuse and control (Fountaine, McCarthy and Saleh, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_04_ai_operating_model.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="build-buy-partner decision choosing whether to develop internally, procure, or ally for a required capability the build-buy-partner decision is the choice of governance mode for acquiring a required capability: internal development, market procurement, or a collaborative arrangement such as an alliance or joint venture. in transaction cost economics the choice turns on asset specificity, uncertainty and the frequency of the transaction, with internalisation preferred as specificity and uncertainty rise, because market contracting then becomes vulnerable to opportunism (williamson, 1985; capron and mitchell, 2012). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.5</span>
-        <span class="gc-title">Build-Buy-Partner Decision</span></div>
-      <p class="gc-strap">Choosing whether to develop internally, procure, or ally for a required capability</p>
-      <p class="gc-def">The build-buy-partner decision is the choice of governance mode for acquiring a required capability: internal development, market procurement, or a collaborative arrangement such as an alliance or joint venture. In transaction cost economics the choice turns on asset specificity, uncertainty and the frequency of the transaction, with internalisation preferred as specificity and uncertainty rise, because market contracting then becomes vulnerable to opportunism (Williamson, 1985; Capron and Mitchell, 2012).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_05_build_buy_partner_decision.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="scalable ai business model a model whose marginal cost of serving an additional user does not rise with volume a scalable ai business model is one in which the cost of serving an additional customer or processing an additional transaction does not rise in proportion to volume, so that value delivered grows faster than the resources consumed. iansiti and lakhani identify three properties that distinguish such models - the absence of operational diseconomies of scale, positive returns to scope from reusing data across domains, and continuous learning effects - and locate the constraint on all three in the operating model rather than the algorithm (iansiti and lakhani, 2020). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.6</span>
-        <span class="gc-title">Scalable AI Business Model</span></div>
-      <p class="gc-strap">A model whose marginal cost of serving an additional user does not rise with volume</p>
-      <p class="gc-def">A scalable AI business model is one in which the cost of serving an additional customer or processing an additional transaction does not rise in proportion to volume, so that value delivered grows faster than the resources consumed. Iansiti and Lakhani identify three properties that distinguish such models - the absence of operational diseconomies of scale, positive returns to scope from reusing data across domains, and continuous learning effects - and locate the constraint on all three in the operating model rather than the algorithm (Iansiti and Lakhani, 2020).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_06_scalable_ai_business_model.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="profit pool the total profit earned across all activities in a value chain, mapped by segment a profit pool is the total profit earned at all points along the value chain of an industry, disaggregated by activity or segment and displayed against the revenue share of each, so that the concentration of profit becomes visible independently of the concentration of revenue. profit pools are frequently distributed very differently from revenue pools, and they reallocate over time as technology alters which activity is scarce (gadiesh and gilbert, 1998). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.7</span>
-        <span class="gc-title">Profit Pool</span></div>
-      <p class="gc-strap">The total profit earned across all activities in a value chain, mapped by segment</p>
-      <p class="gc-def">A profit pool is the total profit earned at all points along the value chain of an industry, disaggregated by activity or segment and displayed against the revenue share of each, so that the concentration of profit becomes visible independently of the concentration of revenue. Profit pools are frequently distributed very differently from revenue pools, and they reallocate over time as technology alters which activity is scarce (Gadiesh and Gilbert, 1998).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_07_profit_pool.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="ai portfolio management allocating scarce delivery capacity across ai initiatives by risk and time horizon ai portfolio management is the allocation of an organisation's scarce data, engineering and change-management capacity across a set of ai initiatives that differ in risk, time to value and strategic horizon. it requires that initiatives be balanced across horizons - core improvement, adjacent extension and transformational bets - and that the constraint being allocated be delivery capacity rather than capital, since capital is rarely the binding limit (baghai, coley and white, 1999; nagji and tuff, 2012). business strategies in the ai era">
-      <div class="gc-head"><span class="gc-num" style="background:#2C7A9E">3.8</span>
-        <span class="gc-title">AI Portfolio Management</span></div>
-      <p class="gc-strap">Allocating scarce delivery capacity across AI initiatives by risk and time horizon</p>
-      <p class="gc-def">AI portfolio management is the allocation of an organisation's scarce data, engineering and change-management capacity across a set of AI initiatives that differ in risk, time to value and strategic horizon. It requires that initiatives be balanced across horizons - core improvement, adjacent extension and transformational bets - and that the constraint being allocated be delivery capacity rather than capital, since capital is rarely the binding limit (Baghai, Coley and White, 1999; Nagji and Tuff, 2012).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U3_Glossary_08_ai_portfolio_management.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit3_glossary.html">Unit 3 glossary</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="usec" id="unit4" data-unit="4">
-    <div class="usec-head" style="border-left-color:#C77C2E">
-      <span class="usec-kick" style="color:#C77C2E">Unit 4 &middot; Mini-Hackathon</span>
-      <h2>Leading Organisational AI Adoption</h2>
-      <p class="usec-core">Adoption is not the last phase of an AI project; it is the only phase in which value is created.</p>
-    </div>
-    <div class="gcards">
-    <div class="gcard gitem" data-k="ai adoption the process by which an approved ai system becomes routine practice in the operating business ai adoption is the process by which an approved artificial intelligence system passes from availability into routine use in the operating business, such that the work is genuinely performed differently and the intended benefit is realised. adoption is distinguished from deployment, which is a technical event, and from acceptance, which is an attitude; only adoption is observable in changed behaviour and changed outcomes (rogers, 2003; fichman, 2000). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.1</span>
-        <span class="gc-title">AI Adoption</span></div>
-      <p class="gc-strap">The process by which an approved AI system becomes routine practice in the operating business</p>
-      <p class="gc-def">AI adoption is the process by which an approved artificial intelligence system passes from availability into routine use in the operating business, such that the work is genuinely performed differently and the intended benefit is realised. Adoption is distinguished from deployment, which is a technical event, and from acceptance, which is an attitude; only adoption is observable in changed behaviour and changed outcomes (Rogers, 2003; Fichman, 2000).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_01_ai_adoption.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="ai roadmap a time-phased plan linking ai initiatives to capability, dependency and business outcome an ai roadmap is a time-phased plan that links a sequence of ai initiatives to the capabilities each requires, the dependencies between them, and the business outcomes each is intended to produce. it is a coordination instrument rather than a schedule: its function is to make visible which capability must exist before which initiative can proceed, so that sequencing errors are detected in planning rather than in delivery (phaal, farrukh and probert, 2004). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.2</span>
-        <span class="gc-title">AI Roadmap</span></div>
-      <p class="gc-strap">A time-phased plan linking AI initiatives to capability, dependency and business outcome</p>
-      <p class="gc-def">An AI roadmap is a time-phased plan that links a sequence of AI initiatives to the capabilities each requires, the dependencies between them, and the business outcomes each is intended to produce. It is a coordination instrument rather than a schedule: its function is to make visible which capability must exist before which initiative can proceed, so that sequencing errors are detected in planning rather than in delivery (Phaal, Farrukh and Probert, 2004).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_02_ai_roadmap.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="proof of concept and pilot purgatory a bounded feasibility test, and the failure state in which pilots never reach production a proof of concept is a small, time-boxed exercise designed to establish whether a proposed approach is technically feasible, and it is complete when that question is answered either way. pilot purgatory is the organisational failure state in which a portfolio of such exercises accumulates, each judged successful on its own terms, while none reaches production - because the criterion applied was feasibility rather than scalability, and no exit decision was ever required (world economic forum and mckinsey, 2018). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.3</span>
-        <span class="gc-title">Proof of Concept and Pilot Purgatory</span></div>
-      <p class="gc-strap">A bounded feasibility test, and the failure state in which pilots never reach production</p>
-      <p class="gc-def">A proof of concept is a small, time-boxed exercise designed to establish whether a proposed approach is technically feasible, and it is complete when that question is answered either way. Pilot purgatory is the organisational failure state in which a portfolio of such exercises accumulates, each judged successful on its own terms, while none reaches production - because the criterion applied was feasibility rather than scalability, and no exit decision was ever required (World Economic Forum and McKinsey, 2018).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_03_proof_of_concept_and_pilot_purgatory.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="change management the structured approach to moving individuals and organisations to a future state change management is the structured approach by which individuals, teams and organisations are moved from a current state to a defined future state so that an intended benefit is realised. where change leadership addresses direction and motivation, change management addresses the planning, sequencing, resourcing, communication and reinforcement of the transition, and it operates on the individual as the unit of change (hiatt, 2006; kotter, 1996). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.4</span>
-        <span class="gc-title">Change Management</span></div>
-      <p class="gc-strap">The structured approach to moving individuals and organisations to a future state</p>
-      <p class="gc-def">Change management is the structured approach by which individuals, teams and organisations are moved from a current state to a defined future state so that an intended benefit is realised. Where change leadership addresses direction and motivation, change management addresses the planning, sequencing, resourcing, communication and reinforcement of the transition, and it operates on the individual as the unit of change (Hiatt, 2006; Kotter, 1996).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_04_change_management.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="mlops the engineering discipline for reliably deploying, monitoring and maintaining models in production mlops is the set of engineering practices for reliably deploying, monitoring, retraining and retiring machine-learning models in production. it extends devops by adding the two dependencies that distinguish machine-learning systems from conventional software: the behaviour of the system depends on data as well as on code, and the system degrades over time as the world it was trained on changes, without any change to the code (sculley et al., 2015; kreuzberger, kuhl and hirschl, 2023). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.5</span>
-        <span class="gc-title">MLOps</span></div>
-      <p class="gc-strap">The engineering discipline for reliably deploying, monitoring and maintaining models in production</p>
-      <p class="gc-def">MLOps is the set of engineering practices for reliably deploying, monitoring, retraining and retiring machine-learning models in production. It extends DevOps by adding the two dependencies that distinguish machine-learning systems from conventional software: the behaviour of the system depends on data as well as on code, and the system degrades over time as the world it was trained on changes, without any change to the code (Sculley et al., 2015; Kreuzberger, Kuhl and Hirschl, 2023).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_05_mlops.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="reskilling and upskilling training for a different role, and deepening capability within the current one upskilling is the development of additional capability within a person's existing role so that the role can be performed to a changed standard. reskilling is the development of the capability required for a materially different role, undertaken because the original role has been substantially altered or eliminated. the distinction matters because the two have different costs, durations, success rates and organisational obligations (world economic forum, 2023; illanes et al., 2018). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.6</span>
-        <span class="gc-title">Reskilling and Upskilling</span></div>
-      <p class="gc-strap">Training for a different role, and deepening capability within the current one</p>
-      <p class="gc-def">Upskilling is the development of additional capability within a person's existing role so that the role can be performed to a changed standard. Reskilling is the development of the capability required for a materially different role, undertaken because the original role has been substantially altered or eliminated. The distinction matters because the two have different costs, durations, success rates and organisational obligations (World Economic Forum, 2023; Illanes et al., 2018).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_06_reskilling_and_upskilling.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="technology acceptance model perceived usefulness and perceived ease of use predict intention to use a system the technology acceptance model holds that an individual's intention to use an information system is determined principally by two beliefs: perceived usefulness, the degree to which the person believes the system will enhance their job performance, and perceived ease of use, the degree to which they believe using it will be free of effort. perceived ease of use also influences perceived usefulness, and usefulness is the stronger predictor of the two (davis, 1989). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.7</span>
-        <span class="gc-title">Technology Acceptance Model</span></div>
-      <p class="gc-strap">Perceived usefulness and perceived ease of use predict intention to use a system</p>
-      <p class="gc-def">The Technology Acceptance Model holds that an individual's intention to use an information system is determined principally by two beliefs: perceived usefulness, the degree to which the person believes the system will enhance their job performance, and perceived ease of use, the degree to which they believe using it will be free of effort. Perceived ease of use also influences perceived usefulness, and usefulness is the stronger predictor of the two (Davis, 1989).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_07_technology_acceptance_model.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="benefits realisation the management process ensuring that promised benefits are defined, owned and delivered benefits realisation management is the process of identifying, defining, planning, tracking and reviewing the benefits attributed to an investment, so that they are actually delivered rather than merely forecast. each benefit must have a named owner outside the delivery team, a baseline measurement taken before the change, and a defined measurement point after it; benefits without all three are unverifiable claims (ward and daniel, 2012; bradley, 2010). leading organisational ai adoption">
-      <div class="gc-head"><span class="gc-num" style="background:#C77C2E">4.8</span>
-        <span class="gc-title">Benefits Realisation</span></div>
-      <p class="gc-strap">The management process ensuring that promised benefits are defined, owned and delivered</p>
-      <p class="gc-def">Benefits realisation management is the process of identifying, defining, planning, tracking and reviewing the benefits attributed to an investment, so that they are actually delivered rather than merely forecast. Each benefit must have a named owner outside the delivery team, a baseline measurement taken before the change, and a defined measurement point after it; benefits without all three are unverifiable claims (Ward and Daniel, 2012; Bradley, 2010).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U4_Glossary_08_benefits_realisation.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit4_glossary.html">Unit 4 glossary</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="usec" id="unit5" data-unit="5">
-    <div class="usec-head" style="border-left-color:#2E8B6F">
-      <span class="usec-kick" style="color:#2E8B6F">Unit 5 &middot; Debate</span>
-      <h2>AI's Ripple Effects: Business, Economy &amp;amp; Environment</h2>
-      <p class="usec-core">The effects of AI that a firm can measure are rarely the effects that decide whether it was worth doing.</p>
-    </div>
-    <div class="gcards">
-    <div class="gcard gitem" data-k="productivity paradox measured productivity gains lag the deployment of a transformative technology the productivity paradox is the observed discrepancy between rapid deployment of a powerful information technology and the absence of a corresponding rise in measured aggregate productivity. the modern explanation is that general purpose technologies require large, slow and unmeasured investments in complementary intangible assets - process redesign, skills, organisational capital - which depress measured productivity while they are being made and raise it only afterwards (solow, 1987; brynjolfsson, rock and syverson, 2021). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.1</span>
-        <span class="gc-title">Productivity Paradox</span></div>
-      <p class="gc-strap">Measured productivity gains lag the deployment of a transformative technology</p>
-      <p class="gc-def">The productivity paradox is the observed discrepancy between rapid deployment of a powerful information technology and the absence of a corresponding rise in measured aggregate productivity. The modern explanation is that general purpose technologies require large, slow and unmeasured investments in complementary intangible assets - process redesign, skills, organisational capital - which depress measured productivity while they are being made and raise it only afterwards (Solow, 1987; Brynjolfsson, Rock and Syverson, 2021).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_01_productivity_paradox.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="general purpose technology a pervasive technology that improves over time and spawns complementary innovation a general purpose technology is a technology characterised by three properties: pervasiveness across many sectors, continuing improvement over time that lowers the cost of use, and the capacity to spawn complementary innovation in the sectors that adopt it. steam power, electricity and the semiconductor are the canonical cases; the economic significance of such technologies lies less in their direct output than in the innovation they enable elsewhere (bresnahan and trajtenberg, 1995). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.2</span>
-        <span class="gc-title">General Purpose Technology</span></div>
-      <p class="gc-strap">A pervasive technology that improves over time and spawns complementary innovation</p>
-      <p class="gc-def">A general purpose technology is a technology characterised by three properties: pervasiveness across many sectors, continuing improvement over time that lowers the cost of use, and the capacity to spawn complementary innovation in the sectors that adopt it. Steam power, electricity and the semiconductor are the canonical cases; the economic significance of such technologies lies less in their direct output than in the innovation they enable elsewhere (Bresnahan and Trajtenberg, 1995).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_02_general_purpose_technology.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="skill-biased technological change technical change that raises demand for some skills and lowers it for others skill-biased technological change is technical change that shifts relative demand across skill groups, raising the productivity and therefore the wages of favoured groups relative to others. the refined task-based account holds that the bias operates on tasks rather than on skill levels: technologies substitute for routine tasks - whether manual or cognitive - and complement non-routine tasks, which produces polarisation rather than a simple skill gradient (autor, levy and murnane, 2003; acemoglu and autor, 2011). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.3</span>
-        <span class="gc-title">Skill-Biased Technological Change</span></div>
-      <p class="gc-strap">Technical change that raises demand for some skills and lowers it for others</p>
-      <p class="gc-def">Skill-biased technological change is technical change that shifts relative demand across skill groups, raising the productivity and therefore the wages of favoured groups relative to others. The refined task-based account holds that the bias operates on tasks rather than on skill levels: technologies substitute for routine tasks - whether manual or cognitive - and complement non-routine tasks, which produces polarisation rather than a simple skill gradient (Autor, Levy and Murnane, 2003; Acemoglu and Autor, 2011).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_03_skill_biased_technological_change.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="labour market displacement reduction in labour demand for tasks a technology performs, net of reinstatement labour market displacement is the reduction in demand for labour in tasks that a technology has come to perform. its net employment effect depends on the balance between the displacement effect, which lowers labour demand at given output, and countervailing effects - the productivity effect, capital accumulation, and above all the reinstatement effect, in which new tasks are created in which labour holds comparative advantage (acemoglu and restrepo, 2019). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.4</span>
-        <span class="gc-title">Labour Market Displacement</span></div>
-      <p class="gc-strap">Reduction in labour demand for tasks a technology performs, net of reinstatement</p>
-      <p class="gc-def">Labour market displacement is the reduction in demand for labour in tasks that a technology has come to perform. Its net employment effect depends on the balance between the displacement effect, which lowers labour demand at given output, and countervailing effects - the productivity effect, capital accumulation, and above all the reinstatement effect, in which new tasks are created in which labour holds comparative advantage (Acemoglu and Restrepo, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_04_labour_market_displacement.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="externality a cost or benefit borne by a third party who is not party to the transaction an externality is a cost or benefit arising from an economic activity that falls on a party who neither chose to incur it nor is compensated for it, and which therefore does not appear in the price of the activity. because the decision-maker does not bear the full cost, activity generating negative externalities is over-supplied relative to the socially efficient level; correction requires that the external cost be internalised through regulation, taxation or assignment of rights (pigou, 1920; coase, 1960). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.5</span>
-        <span class="gc-title">Externality</span></div>
-      <p class="gc-strap">A cost or benefit borne by a third party who is not party to the transaction</p>
-      <p class="gc-def">An externality is a cost or benefit arising from an economic activity that falls on a party who neither chose to incur it nor is compensated for it, and which therefore does not appear in the price of the activity. Because the decision-maker does not bear the full cost, activity generating negative externalities is over-supplied relative to the socially efficient level; correction requires that the external cost be internalised through regulation, taxation or assignment of rights (Pigou, 1920; Coase, 1960).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_05_externality.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="green ai treating computational and environmental cost as a reported outcome alongside accuracy green ai is the practice of treating the computational and environmental cost of machine-learning research and deployment as a first-class evaluation criterion alongside accuracy, and of reporting it. it is contrasted with red ai, in which accuracy improvements are pursued through increased computation without that cost being reported. the proposed reporting measure is total floating-point operations required to produce a result, which is hardware-independent and comparable across studies (schwartz et al., 2020). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.6</span>
-        <span class="gc-title">Green AI</span></div>
-      <p class="gc-strap">Treating computational and environmental cost as a reported outcome alongside accuracy</p>
-      <p class="gc-def">Green AI is the practice of treating the computational and environmental cost of machine-learning research and deployment as a first-class evaluation criterion alongside accuracy, and of reporting it. It is contrasted with Red AI, in which accuracy improvements are pursued through increased computation without that cost being reported. The proposed reporting measure is total floating-point operations required to produce a result, which is hardware-independent and comparable across studies (Schwartz et al., 2020).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_06_green_ai.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="life cycle assessment standardised accounting of environmental impact across a product's whole life life cycle assessment is the compilation and evaluation of the inputs, outputs and potential environmental impacts of a product system throughout its life cycle, from raw material extraction through production, use and end-of-life. it is standardised in four phases - goal and scope definition, inventory analysis, impact assessment, and interpretation - by iso 14040 and iso 14044, and its results are only comparable where the system boundary and functional unit are identically defined (iso, 2006). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.7</span>
-        <span class="gc-title">Life Cycle Assessment</span></div>
-      <p class="gc-strap">Standardised accounting of environmental impact across a product's whole life</p>
-      <p class="gc-def">Life cycle assessment is the compilation and evaluation of the inputs, outputs and potential environmental impacts of a product system throughout its life cycle, from raw material extraction through production, use and end-of-life. It is standardised in four phases - goal and scope definition, inventory analysis, impact assessment, and interpretation - by ISO 14040 and ISO 14044, and its results are only comparable where the system boundary and functional unit are identically defined (ISO, 2006).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_07_life_cycle_assessment.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="digital divide systematic inequality in access to, use of, and benefit from digital technology the digital divide is the systematic inequality between individuals, groups, regions or states in access to digital technology, in the skills and autonomy to use it effectively, and in the outcomes obtained from that use. the literature distinguishes three levels: the first-level divide in physical access, the second-level divide in skills and usage, and the third-level divide in the tangible benefits realised (van dijk, 2005; scheerder, van deursen and van dijk, 2017). ai's ripple effects: business, economy &amp; environment">
-      <div class="gc-head"><span class="gc-num" style="background:#2E8B6F">5.8</span>
-        <span class="gc-title">Digital Divide</span></div>
-      <p class="gc-strap">Systematic inequality in access to, use of, and benefit from digital technology</p>
-      <p class="gc-def">The digital divide is the systematic inequality between individuals, groups, regions or states in access to digital technology, in the skills and autonomy to use it effectively, and in the outcomes obtained from that use. The literature distinguishes three levels: the first-level divide in physical access, the second-level divide in skills and usage, and the third-level divide in the tangible benefits realised (van Dijk, 2005; Scheerder, van Deursen and van Dijk, 2017).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U5_Glossary_08_digital_divide.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit5_glossary.html">Unit 5 glossary</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="usec" id="unit6" data-unit="6">
-    <div class="usec-head" style="border-left-color:#B4444E">
-      <span class="usec-kick" style="color:#B4444E">Unit 6 &middot; Business Challenge &middot; Capstone</span>
-      <h2>Human-Centred Implications of AI: Ethics, Society &amp;amp; Regulation</h2>
-      <p class="usec-core">Risk is not a property of the technology; it is a property of the decision to deploy it, and it belongs to someone.</p>
-    </div>
-    <div class="gcards">
-    <div class="gcard gitem" data-k="ai ethics the applied field concerned with the moral acceptability of designing and deploying ai ai ethics is the field of applied ethics concerned with the moral acceptability of the design, development, deployment and use of artificial intelligence systems, and with the obligations of those who commission and operate them. in the european context it is operationalised through the four principles of the ethics guidelines for trustworthy ai - respect for human autonomy, prevention of harm, fairness and explicability - and their seven implementing requirements (hleg ai, 2019; floridi and cowls, 2019). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.1</span>
-        <span class="gc-title">AI Ethics</span></div>
-      <p class="gc-strap">The applied field concerned with the moral acceptability of designing and deploying AI</p>
-      <p class="gc-def">AI ethics is the field of applied ethics concerned with the moral acceptability of the design, development, deployment and use of artificial intelligence systems, and with the obligations of those who commission and operate them. In the European context it is operationalised through the four principles of the Ethics Guidelines for Trustworthy AI - respect for human autonomy, prevention of harm, fairness and explicability - and their seven implementing requirements (HLEG AI, 2019; Floridi and Cowls, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_01_ai_ethics.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="eu ai act the european union's horizontal, risk-tiered regulation of artificial intelligence systems the eu ai act is regulation (eu) 2024/1689, a horizontal regulation applying to any ai system placed on the union market or whose output is used in the union, regardless of the provider's place of establishment. it assigns obligations according to four risk tiers - unacceptable, high, limited and minimal - with separate obligations for general-purpose ai models, and it distinguishes the duties of providers from those of deployers (european parliament and council, 2024). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.2</span>
-        <span class="gc-title">EU AI Act</span></div>
-      <p class="gc-strap">The European Union's horizontal, risk-tiered regulation of artificial intelligence systems</p>
-      <p class="gc-def">The EU AI Act is Regulation (EU) 2024/1689, a horizontal regulation applying to any AI system placed on the Union market or whose output is used in the Union, regardless of the provider's place of establishment. It assigns obligations according to four risk tiers - unacceptable, high, limited and minimal - with separate obligations for general-purpose AI models, and it distinguishes the duties of providers from those of deployers (European Parliament and Council, 2024).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_02_eu_ai_act.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="algorithmic bias systematic and unfair discrimination in the outputs of an algorithmic system algorithmic bias is systematic and repeatable error in the output of a computational system that creates unfair outcomes, such as privileging one group of users over another. it arises from pre-existing bias embedded in the training data or in social practice, technical bias arising from the design of the system, and emergent bias arising when a system is used in a context different from the one for which it was built (friedman and nissenbaum, 1996; mehrabi et al., 2021). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.3</span>
-        <span class="gc-title">Algorithmic Bias</span></div>
-      <p class="gc-strap">Systematic and unfair discrimination in the outputs of an algorithmic system</p>
-      <p class="gc-def">Algorithmic bias is systematic and repeatable error in the output of a computational system that creates unfair outcomes, such as privileging one group of users over another. It arises from pre-existing bias embedded in the training data or in social practice, technical bias arising from the design of the system, and emergent bias arising when a system is used in a context different from the one for which it was built (Friedman and Nissenbaum, 1996; Mehrabi et al., 2021).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_03_algorithmic_bias.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="explainability the property of a system whose outputs can be accounted for in humanly intelligible terms explainability is the property of an ai system whose behaviour and specific outputs can be accounted for in terms intelligible to a relevant human audience. it is distinguished from interpretability, which concerns whether the model's internal mechanism is directly inspectable, and it is audience-relative: the explanation adequate for a data scientist differs from that required by a decision subject or a regulator (guidotti et al., 2018; rudin, 2019). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.4</span>
-        <span class="gc-title">Explainability</span></div>
-      <p class="gc-strap">The property of a system whose outputs can be accounted for in humanly intelligible terms</p>
-      <p class="gc-def">Explainability is the property of an AI system whose behaviour and specific outputs can be accounted for in terms intelligible to a relevant human audience. It is distinguished from interpretability, which concerns whether the model's internal mechanism is directly inspectable, and it is audience-relative: the explanation adequate for a data scientist differs from that required by a decision subject or a regulator (Guidotti et al., 2018; Rudin, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_04_explainability.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="ai governance the structures and processes by which an organisation directs and controls its ai activity ai governance is the system of structures, decision rights, policies, processes and controls by which an organisation directs its ai activity and holds itself accountable for the outcomes. in the standardised form it comprises four functions - govern, map, measure and manage - of which govern is a culture and accountability function running across the other three rather than a preliminary stage (nist, 2023; iso/iec, 2023). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.5</span>
-        <span class="gc-title">AI Governance</span></div>
-      <p class="gc-strap">The structures and processes by which an organisation directs and controls its AI activity</p>
-      <p class="gc-def">AI governance is the system of structures, decision rights, policies, processes and controls by which an organisation directs its AI activity and holds itself accountable for the outcomes. In the standardised form it comprises four functions - govern, map, measure and manage - of which govern is a culture and accountability function running across the other three rather than a preliminary stage (NIST, 2023; ISO/IEC, 2023).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_05_ai_governance.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="accountability gap the condition in which harm occurs and no party can properly be held responsible the accountability gap - also termed the responsibility gap - is the condition in which an autonomous or learning system causes harm and no human party satisfies the conditions ordinarily required for moral or legal responsibility, because no one had the control or the foreseeability that responsibility presupposes. many-hands problems in distributed development compound it, as responsibility diffuses across designers, deployers, operators and data providers (matthias, 2004; santoni de sio and mecacci, 2021). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.6</span>
-        <span class="gc-title">Accountability Gap</span></div>
-      <p class="gc-strap">The condition in which harm occurs and no party can properly be held responsible</p>
-      <p class="gc-def">The accountability gap - also termed the responsibility gap - is the condition in which an autonomous or learning system causes harm and no human party satisfies the conditions ordinarily required for moral or legal responsibility, because no one had the control or the foreseeability that responsibility presupposes. Many-hands problems in distributed development compound it, as responsibility diffuses across designers, deployers, operators and data providers (Matthias, 2004; Santoni de Sio and Mecacci, 2021).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_06_accountability_gap.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="data protection by design embedding data protection into processing from the outset and by default data protection by design and by default is the legal obligation, under article 25 of the general data protection regulation, to implement appropriate technical and organisational measures that give effect to the data-protection principles at the time processing means are determined and during processing itself, and to ensure that by default only personal data necessary for each specific purpose is processed. it converts a design philosophy into a binding duty on the controller (regulation (eu) 2016/679, article 25; cavoukian, 2009). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.7</span>
-        <span class="gc-title">Data Protection by Design</span></div>
-      <p class="gc-strap">Embedding data protection into processing from the outset and by default</p>
-      <p class="gc-def">Data protection by design and by default is the legal obligation, under Article 25 of the General Data Protection Regulation, to implement appropriate technical and organisational measures that give effect to the data-protection principles at the time processing means are determined and during processing itself, and to ensure that by default only personal data necessary for each specific purpose is processed. It converts a design philosophy into a binding duty on the controller (Regulation (EU) 2016/679, Article 25; Cavoukian, 2009).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_07_data_protection_by_design.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    <div class="gcard gitem" data-k="trustworthy ai ai that is lawful, ethical and technically robust across its whole lifecycle trustworthy ai is artificial intelligence that satisfies three components throughout its lifecycle: it is lawful, complying with applicable law; ethical, respecting ethical principles and values; and robust, both technically and socially, since even well-intentioned systems can cause unintentional harm. the three components are necessary and not individually sufficient, and the framework is operationalised through seven requirements with an accompanying assessment list (hleg ai, 2019). human-centred implications of ai: ethics, society &amp; regulation">
-      <div class="gc-head"><span class="gc-num" style="background:#B4444E">6.8</span>
-        <span class="gc-title">Trustworthy AI</span></div>
-      <p class="gc-strap">AI that is lawful, ethical and technically robust across its whole lifecycle</p>
-      <p class="gc-def">Trustworthy AI is artificial intelligence that satisfies three components throughout its lifecycle: it is lawful, complying with applicable law; ethical, respecting ethical principles and values; and robust, both technically and socially, since even well-intentioned systems can cause unintentional harm. The three components are necessary and not individually sufficient, and the framework is operationalised through seven requirements with an accompanying assessment list (HLEG AI, 2019).</p>
-      <div class="gc-foot">
-        <a class="gc-pdf" href="glossary/MARTI101_U6_Glossary_08_trustworthy_ai.pdf" target="_blank" rel="noopener">Reference sheet (PDF)</a>
-        <a class="gc-unit" href="unit6_glossary.html">Unit 6 glossary</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  </div>
-
-  <div id="alphaView">
-    <div class="alist">
-      <a class="arow gitem" data-k="accountability gap" href="glossary/MARTI101_U6_Glossary_06_accountability_gap.pdf" target="_blank" rel="noopener"><span class="a-t">Accountability Gap</span><span class="a-u">Unit 6 &middot; 6.6</span></a>
-      <a class="arow gitem" data-k="ai adoption" href="glossary/MARTI101_U4_Glossary_01_ai_adoption.pdf" target="_blank" rel="noopener"><span class="a-t">AI Adoption</span><span class="a-u">Unit 4 &middot; 4.1</span></a>
-      <a class="arow gitem" data-k="ai ethics" href="glossary/MARTI101_U6_Glossary_01_ai_ethics.pdf" target="_blank" rel="noopener"><span class="a-t">AI Ethics</span><span class="a-u">Unit 6 &middot; 6.1</span></a>
-      <a class="arow gitem" data-k="ai governance" href="glossary/MARTI101_U6_Glossary_05_ai_governance.pdf" target="_blank" rel="noopener"><span class="a-t">AI Governance</span><span class="a-u">Unit 6 &middot; 6.5</span></a>
-      <a class="arow gitem" data-k="ai literacy" href="glossary/MARTI101_U2_Glossary_01_ai_literacy.pdf" target="_blank" rel="noopener"><span class="a-t">AI Literacy</span><span class="a-u">Unit 2 &middot; 2.1</span></a>
-      <a class="arow gitem" data-k="ai operating model" href="glossary/MARTI101_U3_Glossary_04_ai_operating_model.pdf" target="_blank" rel="noopener"><span class="a-t">AI Operating Model</span><span class="a-u">Unit 3 &middot; 3.4</span></a>
-      <a class="arow gitem" data-k="ai portfolio management" href="glossary/MARTI101_U3_Glossary_08_ai_portfolio_management.pdf" target="_blank" rel="noopener"><span class="a-t">AI Portfolio Management</span><span class="a-u">Unit 3 &middot; 3.8</span></a>
-      <a class="arow gitem" data-k="ai roadmap" href="glossary/MARTI101_U4_Glossary_02_ai_roadmap.pdf" target="_blank" rel="noopener"><span class="a-t">AI Roadmap</span><span class="a-u">Unit 4 &middot; 4.2</span></a>
-      <a class="arow gitem" data-k="ai strategy" href="glossary/MARTI101_U3_Glossary_01_ai_strategy.pdf" target="_blank" rel="noopener"><span class="a-t">AI Strategy</span><span class="a-u">Unit 3 &middot; 3.1</span></a>
-      <a class="arow gitem" data-k="algorithm aversion" href="glossary/MARTI101_U2_Glossary_07_algorithm_aversion.pdf" target="_blank" rel="noopener"><span class="a-t">Algorithm Aversion</span><span class="a-u">Unit 2 &middot; 2.7</span></a>
-      <a class="arow gitem" data-k="algorithmic bias" href="glossary/MARTI101_U6_Glossary_03_algorithmic_bias.pdf" target="_blank" rel="noopener"><span class="a-t">Algorithmic Bias</span><span class="a-u">Unit 6 &middot; 6.3</span></a>
-      <a class="arow gitem" data-k="artificial intelligence" href="glossary/MARTI101_U1_Glossary_02_artificial_intelligence.pdf" target="_blank" rel="noopener"><span class="a-t">Artificial Intelligence</span><span class="a-u">Unit 1 &middot; 1.2</span></a>
-      <a class="arow gitem" data-k="benefits realisation" href="glossary/MARTI101_U4_Glossary_08_benefits_realisation.pdf" target="_blank" rel="noopener"><span class="a-t">Benefits Realisation</span><span class="a-u">Unit 4 &middot; 4.8</span></a>
-      <a class="arow gitem" data-k="build-buy-partner decision" href="glossary/MARTI101_U3_Glossary_05_build_buy_partner_decision.pdf" target="_blank" rel="noopener"><span class="a-t">Build-Buy-Partner Decision</span><span class="a-u">Unit 3 &middot; 3.5</span></a>
-      <a class="arow gitem" data-k="business model innovation" href="glossary/MARTI101_U1_Glossary_05_business_model_innovation.pdf" target="_blank" rel="noopener"><span class="a-t">Business Model Innovation</span><span class="a-u">Unit 1 &middot; 1.5</span></a>
-      <a class="arow gitem" data-k="change leadership" href="glossary/MARTI101_U2_Glossary_05_change_leadership.pdf" target="_blank" rel="noopener"><span class="a-t">Change Leadership</span><span class="a-u">Unit 2 &middot; 2.5</span></a>
-      <a class="arow gitem" data-k="change management" href="glossary/MARTI101_U4_Glossary_04_change_management.pdf" target="_blank" rel="noopener"><span class="a-t">Change Management</span><span class="a-u">Unit 4 &middot; 4.4</span></a>
-      <a class="arow gitem" data-k="competitive advantage" href="glossary/MARTI101_U3_Glossary_03_competitive_advantage.pdf" target="_blank" rel="noopener"><span class="a-t">Competitive Advantage</span><span class="a-u">Unit 3 &middot; 3.3</span></a>
-      <a class="arow gitem" data-k="data protection by design" href="glossary/MARTI101_U6_Glossary_07_data_protection_by_design.pdf" target="_blank" rel="noopener"><span class="a-t">Data Protection by Design</span><span class="a-u">Unit 6 &middot; 6.7</span></a>
-      <a class="arow gitem" data-k="data strategy" href="glossary/MARTI101_U3_Glossary_02_data_strategy.pdf" target="_blank" rel="noopener"><span class="a-t">Data Strategy</span><span class="a-u">Unit 3 &middot; 3.2</span></a>
-      <a class="arow gitem" data-k="decision rights" href="glossary/MARTI101_U2_Glossary_08_decision_rights.pdf" target="_blank" rel="noopener"><span class="a-t">Decision Rights</span><span class="a-u">Unit 2 &middot; 2.8</span></a>
-      <a class="arow gitem" data-k="digital divide" href="glossary/MARTI101_U5_Glossary_08_digital_divide.pdf" target="_blank" rel="noopener"><span class="a-t">Digital Divide</span><span class="a-u">Unit 5 &middot; 5.8</span></a>
-      <a class="arow gitem" data-k="digital maturity" href="glossary/MARTI101_U1_Glossary_03_digital_maturity.pdf" target="_blank" rel="noopener"><span class="a-t">Digital Maturity</span><span class="a-u">Unit 1 &middot; 1.3</span></a>
-      <a class="arow gitem" data-k="digital transformation" href="glossary/MARTI101_U1_Glossary_01_digital_transformation.pdf" target="_blank" rel="noopener"><span class="a-t">Digital Transformation</span><span class="a-u">Unit 1 &middot; 1.1</span></a>
-      <a class="arow gitem" data-k="digitisation and digitalisation" href="glossary/MARTI101_U1_Glossary_04_digitisation_and_digitalisation.pdf" target="_blank" rel="noopener"><span class="a-t">Digitisation and Digitalisation</span><span class="a-u">Unit 1 &middot; 1.4</span></a>
-      <a class="arow gitem" data-k="disruptive innovation" href="glossary/MARTI101_U1_Glossary_06_disruptive_innovation.pdf" target="_blank" rel="noopener"><span class="a-t">Disruptive Innovation</span><span class="a-u">Unit 1 &middot; 1.6</span></a>
-      <a class="arow gitem" data-k="eu ai act" href="glossary/MARTI101_U6_Glossary_02_eu_ai_act.pdf" target="_blank" rel="noopener"><span class="a-t">EU AI Act</span><span class="a-u">Unit 6 &middot; 6.2</span></a>
-      <a class="arow gitem" data-k="explainability" href="glossary/MARTI101_U6_Glossary_04_explainability.pdf" target="_blank" rel="noopener"><span class="a-t">Explainability</span><span class="a-u">Unit 6 &middot; 6.4</span></a>
-      <a class="arow gitem" data-k="externality" href="glossary/MARTI101_U5_Glossary_05_externality.pdf" target="_blank" rel="noopener"><span class="a-t">Externality</span><span class="a-u">Unit 5 &middot; 5.5</span></a>
-      <a class="arow gitem" data-k="general purpose technology" href="glossary/MARTI101_U5_Glossary_02_general_purpose_technology.pdf" target="_blank" rel="noopener"><span class="a-t">General Purpose Technology</span><span class="a-u">Unit 5 &middot; 5.2</span></a>
-      <a class="arow gitem" data-k="green ai" href="glossary/MARTI101_U5_Glossary_06_green_ai.pdf" target="_blank" rel="noopener"><span class="a-t">Green AI</span><span class="a-u">Unit 5 &middot; 5.6</span></a>
-      <a class="arow gitem" data-k="human-in-the-loop" href="glossary/MARTI101_U2_Glossary_06_human_in_the_loop.pdf" target="_blank" rel="noopener"><span class="a-t">Human-in-the-Loop</span><span class="a-u">Unit 2 &middot; 2.6</span></a>
-      <a class="arow gitem" data-k="labour market displacement" href="glossary/MARTI101_U5_Glossary_04_labour_market_displacement.pdf" target="_blank" rel="noopener"><span class="a-t">Labour Market Displacement</span><span class="a-u">Unit 5 &middot; 5.4</span></a>
-      <a class="arow gitem" data-k="life cycle assessment" href="glossary/MARTI101_U5_Glossary_07_life_cycle_assessment.pdf" target="_blank" rel="noopener"><span class="a-t">Life Cycle Assessment</span><span class="a-u">Unit 5 &middot; 5.7</span></a>
-      <a class="arow gitem" data-k="mlops" href="glossary/MARTI101_U4_Glossary_05_mlops.pdf" target="_blank" rel="noopener"><span class="a-t">MLOps</span><span class="a-u">Unit 4 &middot; 4.5</span></a>
-      <a class="arow gitem" data-k="organisational culture" href="glossary/MARTI101_U2_Glossary_04_organisational_culture.pdf" target="_blank" rel="noopener"><span class="a-t">Organisational Culture</span><span class="a-u">Unit 2 &middot; 2.4</span></a>
-      <a class="arow gitem" data-k="productivity paradox" href="glossary/MARTI101_U5_Glossary_01_productivity_paradox.pdf" target="_blank" rel="noopener"><span class="a-t">Productivity Paradox</span><span class="a-u">Unit 5 &middot; 5.1</span></a>
-      <a class="arow gitem" data-k="profit pool" href="glossary/MARTI101_U3_Glossary_07_profit_pool.pdf" target="_blank" rel="noopener"><span class="a-t">Profit Pool</span><span class="a-u">Unit 3 &middot; 3.7</span></a>
-      <a class="arow gitem" data-k="proof of concept and pilot purgatory" href="glossary/MARTI101_U4_Glossary_03_proof_of_concept_and_pilot_purgatory.pdf" target="_blank" rel="noopener"><span class="a-t">Proof of Concept and Pilot Purgatory</span><span class="a-u">Unit 4 &middot; 4.3</span></a>
-      <a class="arow gitem" data-k="psychological safety" href="glossary/MARTI101_U2_Glossary_02_psychological_safety.pdf" target="_blank" rel="noopener"><span class="a-t">Psychological Safety</span><span class="a-u">Unit 2 &middot; 2.2</span></a>
-      <a class="arow gitem" data-k="reskilling and upskilling" href="glossary/MARTI101_U4_Glossary_06_reskilling_and_upskilling.pdf" target="_blank" rel="noopener"><span class="a-t">Reskilling and Upskilling</span><span class="a-u">Unit 4 &middot; 4.6</span></a>
-      <a class="arow gitem" data-k="scalable ai business model" href="glossary/MARTI101_U3_Glossary_06_scalable_ai_business_model.pdf" target="_blank" rel="noopener"><span class="a-t">Scalable AI Business Model</span><span class="a-u">Unit 3 &middot; 3.6</span></a>
-      <a class="arow gitem" data-k="skill-biased technological change" href="glossary/MARTI101_U5_Glossary_03_skill_biased_technological_change.pdf" target="_blank" rel="noopener"><span class="a-t">Skill-Biased Technological Change</span><span class="a-u">Unit 5 &middot; 5.3</span></a>
-      <a class="arow gitem" data-k="technology acceptance model" href="glossary/MARTI101_U4_Glossary_07_technology_acceptance_model.pdf" target="_blank" rel="noopener"><span class="a-t">Technology Acceptance Model</span><span class="a-u">Unit 4 &middot; 4.7</span></a>
-      <a class="arow gitem" data-k="technology adoption lifecycle" href="glossary/MARTI101_U1_Glossary_07_technology_adoption_lifecycle.pdf" target="_blank" rel="noopener"><span class="a-t">Technology Adoption Lifecycle</span><span class="a-u">Unit 1 &middot; 1.7</span></a>
-      <a class="arow gitem" data-k="trustworthy ai" href="glossary/MARTI101_U6_Glossary_08_trustworthy_ai.pdf" target="_blank" rel="noopener"><span class="a-t">Trustworthy AI</span><span class="a-u">Unit 6 &middot; 6.8</span></a>
-      <a class="arow gitem" data-k="upper echelons theory" href="glossary/MARTI101_U2_Glossary_03_upper_echelons_theory.pdf" target="_blank" rel="noopener"><span class="a-t">Upper Echelons Theory</span><span class="a-u">Unit 2 &middot; 2.3</span></a>
-      <a class="arow gitem" data-k="value migration" href="glossary/MARTI101_U1_Glossary_08_value_migration.pdf" target="_blank" rel="noopener"><span class="a-t">Value Migration</span><span class="a-u">Unit 1 &middot; 1.8</span></a>
+  <div class="gl-controls" id="glControls">
+    <input class="gl-search" id="glSearch" type="search" placeholder="Search key terms&hellip;" autocomplete="off" aria-label="Search key terms">
+    <div class="gl-filters">
+      <button class="gl-chip on" data-unit="all">All units</button>
+      <button class="gl-chip" data-unit="1">Unit 1</button><button class="gl-chip" data-unit="2">Unit 2</button><button class="gl-chip" data-unit="3">Unit 3</button><button class="gl-chip" data-unit="4">Unit 4</button><button class="gl-chip" data-unit="5">Unit 5</button><button class="gl-chip" data-unit="6">Unit 6</button>
     </div>
   </div>
+  <p class="gl-note"><b>Source discipline.</b> This glossary is a study aid, not a citable source. In assessed work, cite the primary source given under each definition. For the frameworks behind these terms, open the <a href="slibrary.html" style="color:#2E8B6F;font-weight:bold">Framework Author Slibrary &rarr;</a></p>
+  <div class="gl-count" id="glCount"></div>
+  <div id="glResults"></div>
 </main>
-<footer class="site"><hr class="divider">
-  <p>&copy; 2026 Dr. Hildegard Haas &middot; EU Business School &middot; MARTI101</p>
-  <p style="font-size:12px;opacity:.7">Cite the primary source listed on each reference sheet, not this glossary.</p>
+
+<footer class="site">
+  <hr class="divider">
+  <p><strong>MARTI101</strong> &middot; Glossary &amp; Key Terms</p>
+  <p><a href="index.html">&larr; Back to Course Overview</a></p>
+  <p style="font-size:12px;opacity:.7">&copy; 2026 Dr. Hildegard Haas &middot; EU Business School &middot; MARTI101 &middot; Harvard referencing style</p>
 </footer>
-<script>
-(function(){
-  var q=document.getElementById('gsearch'), uv=document.getElementById('unitView'), av=document.getElementById('alphaView');
-  function filter(){
-    var v=q.value.trim().toLowerCase();
-    document.querySelectorAll('.gitem').forEach(function(el){
-      el.classList.toggle('hidden', v && el.getAttribute('data-k').indexOf(v)===-1);
-    });
-    document.querySelectorAll('.usec').forEach(function(sec){
-      var any=sec.querySelectorAll('.gitem:not(.hidden)').length;
-      sec.classList.toggle('hidden', v && any===0);
-    });
-  }
-  q.addEventListener('input',filter);
-  function mode(alpha){
-    uv.style.display = alpha ? 'none' : '';
-    av.style.display = alpha ? '' : 'none';
-    document.getElementById('byUnit').classList.toggle('on', !alpha);
-    document.getElementById('byAlpha').classList.toggle('on', alpha);
-  }
-  document.getElementById('byUnit').addEventListener('click',function(){mode(false);});
-  document.getElementById('byAlpha').addEventListener('click',function(){mode(true);});
-  document.getElementById('expandAll').addEventListener('click',function(){q.value='';filter();});
-})();
-</script>
-<style id="marti-protect-css">
-  *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
-  input,textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
-  @media print{html,body{display:none !important}}
-</style>
-<script id="marti-protect-js">
-(function(){
-  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
-  ['copy','cut'].forEach(function(ev){document.addEventListener(ev,function(e){e.preventDefault();},{capture:true});});
-  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
-  document.addEventListener('keydown',function(e){
-    var k=(e.key||'').toLowerCase(); var meta=e.ctrlKey||e.metaKey;
-    if(meta && ['c','x','s','p','u'].indexOf(k)!==-1){e.preventDefault();return false;}
-    if(k==='f12'){e.preventDefault();return false;}
-    if(meta && e.shiftKey && ['i','j','c'].indexOf(k)!==-1){e.preventDefault();return false;}
-    if(e.key==='PrintScreen'){e.preventDefault();return false;}
-  },{capture:true});
-})();
-</script>
-</body></html>
+
+<script src="glossary.js"></script>
+<script src="glossary_app.js"></script>
+</body>
+</html>
