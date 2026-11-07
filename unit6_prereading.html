@@ -38,21 +38,150 @@
   footer{background:var(--navy);color:#fff;text-align:center;padding:24px;font-size:13px}
   footer .d{height:2px;width:54px;background:var(--teal);border:none;margin:0 auto 12px}
   @media(max-width:640px){.story{grid-template-columns:1fr}}
+
+  .tbl{width:100%;border-collapse:collapse;margin:10px 0 6px;font-size:13.5px}
+  .tbl th{background:var(--navy);color:#fff;text-align:left;padding:9px 10px;font-size:12px;letter-spacing:.4px;text-transform:uppercase}
+  .tbl td{border-bottom:1px solid var(--line);padding:9px 10px;vertical-align:top}
+  .tbl tr:nth-child(even) td{background:var(--gray)}
+  .tbl td:first-child{font-weight:bold;color:var(--ink);white-space:nowrap}
+  .tblwrap{overflow-x:auto;margin:0 0 6px}
+  .defs dt{font-weight:bold;color:var(--ink);font-size:15px;margin:14px 0 2px}
+  .defs dd{margin:0 0 4px;font-size:14.5px}
+  .defs dd .src{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+  .warn{background:#FDF1F2;border-left:4px solid #E63946;border-radius:0 8px 8px 0;padding:12px 16px;margin:14px 0 0;font-size:13.5px}
+  .warn b{color:#E63946}
+  .tiers{display:grid;gap:8px;margin:12px 0}
+  .tier{border-radius:8px;padding:10px 14px;font-size:14px;color:#fff}
+  .tier b{display:block;font-size:13px;letter-spacing:.5px;text-transform:uppercase}
+  .t1{background:#7A1E27}.t2{background:var(--acc)}.t3{background:#D08A55}.t4{background:#2E8B6F}.t5{background:var(--navy)}
+  .logic{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+  .logic .lg{background:var(--gray);border-radius:9px;padding:14px 16px}
+  .logic .lg .lbl{font-size:11px;font-weight:bold;letter-spacing:.5px;color:var(--acc);text-transform:uppercase;margin-bottom:6px}
+  .logic .lg p{font-size:13.5px;margin:0}
+  .reflist p{font-size:13px;margin:0 0 8px;padding-left:22px;text-indent:-22px}
+  @media(max-width:640px){.logic{grid-template-columns:1fr}.tbl tr:first-child{display:none}.tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}.tbl tr{border:1px solid var(--line);border-radius:8px;margin:0 0 10px;overflow:hidden}.tbl td{border:none;padding:6px 12px}.tbl td:first-child{white-space:normal;background:var(--navy)!important;color:#fff}}
 </style></head><body>
 <div class="backbar"><a href="index.html">&larr; Back to Course Overview</a></div>
-<div class="hero"><p class="kick">MARTI101 · Unit 6 · Pre-Reading</p><h1>Pre-reading: Risk Is Not a Property of the Technology</h1><p class="sub">Key framework: Sources of Harm in the ML Lifecycle</p><p class="unit">Human-Centred Implications of AI: Ethics, Society &amp; Regulation · Format: Business Challenge</p></div>
+<div class="hero"><p class="kick">MARTI101 · Unit 6 · Pre-Reading</p><h1>Pre-reading: Risk Is Not a Property of the Technology</h1><p class="sub">Key frameworks: The EU AI Act Risk Pyramid, read against the global regulatory map · Sources of Harm in the Machine Learning (ML) Lifecycle</p><p class="unit">Human-Centred Implications of AI: Ethics, Society &amp; Regulation · Format: Business Challenge</p></div>
 <main>
 <div class="ilo"><span class="l">Learning Focus · ILO 5 · integrates ILOs 1–4</span><p>Evaluate key ethical and legal considerations for business leaders adopting AI.</p></div>
+
 <div class="card">
-      <p class="redmsg">Key framework: Sources of Harm in the ML Lifecycle</p>
-      <p>A taxonomy locating distinct sources of harm at specific points in the machine learning lifecycle, from historical bias in the world to deployment and evaluation bias.</p>
-      <h2 class="sec">Key Points</h2><ul><li>Historical, representation, measurement, aggregation bias</li><li>Learning, evaluation and deployment bias downstream</li><li>Each source needs a different remedy</li><li>&#x27;Debiasing the data&#x27; addresses only one of seven</li></ul>
-      <div class="refbox"><span class="rl">REFERENCE</span><p>Suresh, H. and Guttag, J. (2021) &#x27;A framework for understanding sources of harm throughout the machine learning life cycle&#x27;, Equity and Access in Algorithms, Mechanisms, and Optimization, pp. 1–9.</p></div>
-    </div>
+  <p class="redmsg">The same AI system can be lawful in one market, heavily regulated in a second and prohibited in a third. Nothing about the model changes. What changes is the use, the role you play and the jurisdiction.</p>
+  <h2 class="sec">The Storyline (after Bostelaar)</h2>
+  <div class="story">
+    <div class="st"><div class="lbl">Beginning · Misbelief</div><p>"AI regulation" means the EU AI Act, and compliance is a check at the end of the project.</p></div>
+    <div class="st"><div class="lbl">Middle · Insight</div><p>Every major economy regulates AI, but by a different logic. The EU Act itself reaches firms outside Europe whenever a system's output is used in the Union.</p></div>
+    <div class="st"><div class="lbl">End · Understanding</div><p>A leader classifies every system on three axes before building it: what it is used for, which legal role the firm plays, and where its outputs land.</p></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2 class="sec">1 · Define before you classify</h2>
+  <p>Precision matters because every obligation in the EU Artificial Intelligence Act (AI Act) is triggered by a defined term. If a system is not an "AI system", or your firm is not its "provider", the obligation does not attach. The definitions below are paraphrased; cite the article, not this page.</p>
+  <dl class="defs">
+    <dt>AI system</dt>
+    <dd>A machine-based system, designed to operate with varying levels of autonomy and possibly adaptive after deployment, that infers from its input how to generate outputs such as predictions, content, recommendations or decisions able to influence physical or virtual environments. The Organisation for Economic Co-operation and Development (OECD) uses a near-identical definition, which is why it travels across jurisdictions.<span class="src">Regulation (EU) 2024/1689, Art. 3(1); OECD (2024)</span></dd>
+    <dt>Provider</dt>
+    <dd>Whoever develops an AI system or general-purpose AI model, or has it developed, and places it on the market or puts it into service under its own name or trademark, whether for payment or free of charge.<span class="src">Art. 3(3)</span></dd>
+    <dt>Deployer</dt>
+    <dd>Whoever uses an AI system under its own authority, other than in a purely personal, non-professional activity. Most companies in this course are deployers, not providers. A deployer that rebrands a system, or substantially modifies it, can become its provider.<span class="src">Art. 3(4); Art. 25</span></dd>
+    <dt>General-purpose AI (GPAI) model</dt>
+    <dd>An AI model that displays significant generality, can competently perform a wide range of distinct tasks and can be integrated into many downstream systems. Large language models are the standard example. Models used only for research or prototyping before release are excluded.<span class="src">Art. 3(63)</span></dd>
+    <dt>High-risk AI system</dt>
+    <dd>Either (a) a system that is, or is a safety component of, a product covered by the EU product-safety legislation listed in Annex I and subject to third-party conformity assessment, or (b) a system used in one of the areas listed in Annex III: biometrics, critical infrastructure, education, employment, access to essential private and public services (including credit and insurance), law enforcement, migration and border control, and the administration of justice and democratic processes. An Annex III system can escape the classification if it poses no significant risk, for example when it performs only a narrow procedural task, but never if it profiles natural persons.<span class="src">Art. 6; Annexes I and III</span></dd>
+  </dl>
+</div>
+
+<div class="card">
+  <p class="redmsg">Key framework 1: The EU AI Act Risk Pyramid</p>
+  <p>The Act sorts obligations by the risk of the use, not by the sophistication of the technology. The pyramid is a teaching simplification: transparency duties apply across tiers, and general-purpose AI models sit beside the pyramid with their own regime.</p>
+  <div class="tiers">
+    <div class="tier t1"><b>Unacceptable risk · prohibited</b>Practices such as social scoring, manipulative techniques that cause significant harm, emotion recognition in the workplace and in education, and untargeted scraping of facial images. Applies from 2 February 2025. The Digital Omnibus on AI adds two prohibitions on generating non-consensual intimate imagery and child sexual abuse material, applying from 2 December 2026.</div>
+    <div class="tier t2"><b>High risk · conformity before market</b>Risk management, data governance, technical documentation, logging, human oversight, accuracy and robustness, plus registration. Deployers must use the system as instructed, assign competent human oversight and, in some cases, assess the impact on fundamental rights. After the Omnibus: Annex III systems from 2 December 2027, Annex I systems from 2 August 2028.</div>
+    <div class="tier t3"><b>Limited risk · transparency</b>Users must know they are interacting with AI; synthetic or manipulated content and deepfakes must be marked or disclosed (Art. 50).</div>
+    <div class="tier t4"><b>Minimal risk · no new obligations</b>Most business AI (spam filters, inventory forecasting). Voluntary codes encouraged.</div>
+    <div class="tier t5"><b>Beside the pyramid · general-purpose AI models</b>Documentation, copyright policy and a summary of training content for all providers; additional evaluation, incident-reporting and cybersecurity duties for models with systemic risk. Applies from 2 August 2025.</div>
+  </div>
+  <p><b>Cutting across every tier:</b> since 2 February 2025, Article 4 requires providers and deployers to take measures supporting the AI literacy of their staff (see Unit 2).</p>
+  <h2 class="sec">Key Points</h2>
+  <ul>
+    <li>Classification follows the use case: the same model is minimal-risk as a writing aid and high-risk as a CV-screening tool.</li>
+    <li>Roles decide duties: providers carry most obligations, but deployers are never obligation-free.</li>
+    <li>The Act is extraterritorial: a provider in the United States or China is covered when its system's output is used in the Union.</li>
+    <li>Deadlines move: the 2026 Omnibus shifted the high-risk dates, so check the consolidated text before you cite a date.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2 class="sec">2 · Read the pyramid against the global map</h2>
+  <p>The EU is one regulatory model among several. Multinational firms comply with all of them at once, and their strategies often follow the strictest regime that applies to the largest market.</p>
+  <div class="tblwrap"><table class="tbl">
+    <tr><th>Jurisdiction</th><th>Main instrument(s)</th><th>Regulatory logic</th></tr>
+    <tr><td>European Union</td><td>AI Act, Regulation (EU) 2024/1689, amended by the Digital Omnibus on AI, Regulation (EU) 2026/1744; alongside the General Data Protection Regulation (GDPR)</td><td>Horizontal, binding, risk-based; covers every sector; extraterritorial.</td></tr>
+    <tr><td>Council of Europe</td><td>Framework Convention on AI and Human Rights, Democracy and the Rule of Law (CETS No. 225), opened for signature 2024; signed by, among others, the EU, the United Kingdom, the United States and Japan; ratified by the EU in May 2026</td><td>First binding international treaty on AI; obliges states, not firms directly; focuses on human rights.</td></tr>
+    <tr><td>United States</td><td>No federal AI statute. Executive Order 14365 (December 2025) directs federal agencies to challenge state AI laws, but does not itself preempt them. State laws: e.g. Colorado's AI Act, rewritten in 2026 before it ever took effect, now applies to consequential decisions from 1 January 2027</td><td>Sectoral and state-by-state, enforced through existing consumer-protection and anti-discrimination law; federal policy favours a light touch.</td></tr>
+    <tr><td>China</td><td>Interim Measures for the Management of Generative AI Services (2023); rules on algorithmic recommendation (2022) and deep synthesis (2023); Measures for Labelling AI-Generated and Synthetic Content (from 1 September 2025). A comprehensive AI law is planned but not in force</td><td>Service- and content-specific; registration of algorithms with the Cyberspace Administration of China (CAC); strong content controls.</td></tr>
+    <tr><td>South Korea</td><td>Act on the Development of Artificial Intelligence and Establishment of Trust ("AI Basic Act"), in force since 22 January 2026</td><td>Horizontal framework; duties for "high-impact" AI and generative-AI labelling; foreign firms above thresholds need a local representative.</td></tr>
+    <tr><td>Japan</td><td>Act on Promotion of Research, Development and Utilization of AI-Related Technologies ("AI Promotion Act"), 2025</td><td>Promotion-first; cooperation duties, no monetary penalties; relies on guidelines.</td></tr>
+    <tr><td>United Kingdom</td><td>No AI-specific statute; five cross-sector principles applied by existing regulators (2023 White Paper)</td><td>Principles-based, regulator-led, pro-innovation.</td></tr>
+  </table></div>
+  <h3>Soft law and standards: the common language underneath</h3>
+  <p>Firms that operate across these regimes rarely build one compliance programme per country. They anchor governance in international principles and standards that every regime recognises:</p>
+  <ul>
+    <li><b>Principles:</b> OECD AI Principles (2019, updated 2024); United Nations Educational, Scientific and Cultural Organization (UNESCO) Recommendation on the Ethics of AI (2021); G7 Hiroshima Process International Code of Conduct for organisations developing advanced AI (2023).</li>
+    <li><b>Standards:</b> International Organization for Standardization / International Electrotechnical Commission (ISO/IEC) 42001 (AI management system, certifiable) and ISO/IEC 23894 (AI risk management guidance); National Institute of Standards and Technology (NIST) AI Risk Management Framework with its four functions govern, map, measure and manage.</li>
+  </ul>
+  <h3>Four regulatory logics</h3>
+  <div class="logic">
+    <div class="lg"><div class="lbl">Risk-based, horizontal</div><p>European Union, South Korea. One law, all sectors, obligations scaled to the risk of the use.</p></div>
+    <div class="lg"><div class="lbl">Sectoral and fragmented</div><p>United States. Existing laws plus state statutes; obligations depend on sector and state.</p></div>
+    <div class="lg"><div class="lbl">Content and service control</div><p>China. Targeted rules per technology type, with registration and content requirements.</p></div>
+    <div class="lg"><div class="lbl">Promotion-first, principles-led</div><p>Japan, United Kingdom. Few binding duties; guidance and existing regulators fill the gap.</p></div>
+  </div>
+  <div class="warn"><b>⚠ Status as of 7 November 2026.</b> AI law is changing quickly; Colorado rewrote its act before it took effect, and the EU moved its own deadlines in 2026. Before citing any date or obligation in assessed work, check the current official text listed in the references.</div>
+</div>
+
+<div class="card">
+  <p class="redmsg">Key framework 2: Sources of Harm in the ML Lifecycle</p>
+  <p>Law tells you who is accountable; this taxonomy tells you where harm actually enters a system. It locates distinct sources of harm at specific points in the machine learning lifecycle, from historical bias in the world to deployment and evaluation bias.</p>
+  <h2 class="sec">Key Points</h2><ul><li>Historical, representation, measurement, aggregation bias</li><li>Learning, evaluation and deployment bias downstream</li><li>Each source needs a different remedy</li><li>&#x27;Debiasing the data&#x27; addresses only one of seven</li></ul>
+</div>
+
+<div class="card">
+  <h2 class="sec">Prepare for the Business Challenge</h2>
+  <p>Aurora Health Group operates across Europe. Before the session, think through these questions for any one of its four proposed systems:</p>
+  <ol>
+    <li>Is it an "AI system" under Article 3(1)? Is Aurora its provider or its deployer, and could that change if Aurora adapts the system?</li>
+    <li>Where does it sit in the pyramid, and from which date do its obligations apply?</li>
+    <li>If the vendor were based in the United States or South Korea, which rules would apply to the vendor, and which to Aurora?</li>
+  </ol>
+</div>
+
+<div class="card reflist">
+  <h2 class="sec">References</h2>
+  <p>Colorado General Assembly (2026) <i>Senate Bill 26-189</i> (repealing and re-enacting Colo. Rev. Stat. Title 6, Article 1, Part 17). Denver: Colorado General Assembly.</p>
+  <p>Council of Europe (2024) <i>Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law</i> (CETS No. 225). Vilnius: Council of Europe.</p>
+  <p>Cyberspace Administration of China et al. (2023) <i>Interim Measures for the Management of Generative Artificial Intelligence Services</i>. Beijing: CAC.</p>
+  <p>Cyberspace Administration of China et al. (2025) <i>Measures for Labelling Artificial Intelligence-Generated and Synthetic Content</i>. Beijing: CAC.</p>
+  <p>European Parliament and Council (2024) Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). <i>Official Journal of the European Union</i>, L, 12 July 2024.</p>
+  <p>European Parliament and Council (2026) Regulation (EU) 2026/1744 amending Regulation (EU) 2024/1689 (Digital Omnibus on AI). <i>Official Journal of the European Union</i>, L, 24 July 2026.</p>
+  <p>Executive Office of the President (2025) Executive Order 14365, <i>Ensuring a National Policy Framework for Artificial Intelligence</i>, 11 December 2025. Washington, DC: Federal Register.</p>
+  <p>International Organization for Standardization and International Electrotechnical Commission (2023) <i>ISO/IEC 42001:2023 Information technology – Artificial intelligence – Management system</i>. Geneva: ISO.</p>
+  <p>Japan (2025) <i>Act on Promotion of Research, Development and Utilization of Artificial Intelligence-Related Technologies</i>. Tokyo: Cabinet Office.</p>
+  <p>National Institute of Standards and Technology (2023) <i>Artificial Intelligence Risk Management Framework (AI RMF 1.0)</i>. NIST AI 100-1. Gaithersburg, MD: NIST.</p>
+  <p>OECD (2024) <i>Recommendation of the Council on Artificial Intelligence</i>. OECD/LEGAL/0449. Paris: OECD.</p>
+  <p>Republic of Korea (2025) <i>Act on the Development of Artificial Intelligence and Establishment of Trust</i> (in force 22 January 2026). Seoul: Ministry of Science and ICT.</p>
+  <p>Suresh, H. and Guttag, J. (2021) &#x27;A framework for understanding sources of harm throughout the machine learning life cycle&#x27;, <i>Equity and Access in Algorithms, Mechanisms, and Optimization</i>, pp. 1–9.</p>
+  <p>UNESCO (2021) <i>Recommendation on the Ethics of Artificial Intelligence</i>. Paris: UNESCO.</p>
+  <p>United Kingdom. Department for Science, Innovation and Technology (2023) <i>A pro-innovation approach to AI regulation</i>. CP 815. London: HMSO.</p>
+</div>
+
 <div class="backlinks">
   <a href="index.html">&larr; Course Overview</a>
   <a href="gallery.html#unit6">Framework Gallery</a>
   <a href="slibrary.html#unit6">Framework Authors</a>
+  <a href="glossary.html">Glossary</a>
 </div>
 </main>
 <footer><hr class="d"><p>© 2026 Dr. Hildegard Haas · EU Business School · MARTI101</p></footer>
